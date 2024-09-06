@@ -1,4 +1,4 @@
-import { model, Schema } from 'mongoose';
+import { model, Schema } from "mongoose";
 
 export const Category = model('Category', new Schema({
   name: {
@@ -8,5 +8,5 @@ export const Category = model('Category', new Schema({
   icon: {
     type: String,
     required: true,
-  }
-}))
+  },
+}));
