@@ -3,11 +3,7 @@ import { Product } from '../../models/Product';
 
 export async function createProduct(req: Request, res: Response) {
   try {
-    const {} = req.body;
-
-    const product = await Product.create({})
-
-    res.status(201).json(product)
+    console.log(req.body)
 
   } catch (error) {
     console.log(error)
