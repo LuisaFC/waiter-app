@@ -1,7 +1,7 @@
 import { model, Schema } from 'mongoose';
 
 export const Order = model('Order', new Schema({
-  name: {
+  table: {
     type: String,
     required: true,
   },
@@ -10,7 +10,7 @@ export const Order = model('Order', new Schema({
     enum: ['WAITING', 'IN_PRODUCTION', 'DONE'],
     default: 'WAITING',
   },
-  createDate: {
+  createAt: {
     type: Date,
     default: Date.now,
   },
